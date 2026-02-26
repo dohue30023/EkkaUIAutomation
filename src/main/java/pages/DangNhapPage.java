@@ -12,11 +12,11 @@ public class DangNhapPage extends Page {
 		super(dr);
 	}
 
-	public TrangChuAdminPage login(String userName, String pass) {
+	public TrangChuPage login(String userName, String pass) {
 		base.inputText(txtUserName, userName);
 		base.inputText(txtPassword, pass);
 		base.clickOnElement(btnLogin);
-		return new TrangChuAdminPage(driver);
+		return new TrangChuPage(driver);
 	}
 
 }

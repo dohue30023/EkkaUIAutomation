@@ -6,7 +6,7 @@
       <class name="tests.ThemSanPhamTest">
         <methods>
           <include name="setUp"/>
-          <include name="themMoiThanhCong"/>
+          <include name="themMoiThanhCong" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.ThemSanPhamTest -->
     </classes>

@@ -21,6 +21,9 @@ public class Utils {
 			while((line = reader.readNext())!=null) {
 				rows.add(line);
 			}
+			if (rows.size()== 1) {
+				System.out.println("Data is not found");
+			}
 			dataTable= rows.toArray(new String[0][]);
 			
 		} catch (Exception e) {

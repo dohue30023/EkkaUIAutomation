@@ -27,13 +27,17 @@ public class ThemSanPhamTest extends TestCase {
 	public Object[][] readData() {
 		Utils utils = new Utils();
 		Object[][] data = new Object[1][2];
-		DangNhap dangNhap = new DangNhap();
+
+		// Đọc dữ liệu đăng nhập
 		String[][] dangNhapData = utils.readDataFormCSV("DangNhap_Data.csv");
+		DangNhap dangNhap = new DangNhap();
 		dangNhap.setUserName(dangNhapData[0][0]);
 		dangNhap.setPassWord(dangNhapData[0][1]);
 		data[0][0] = dangNhap;
-		SanPham sanPham = new SanPham();
+
+		// Đọc dữ liệu sản phẩm
 		String[][] sanPhamData = utils.readDataFormCSV("ThemMoi_TC1.csv");
+		SanPham sanPham = new SanPham();
 		sanPham.setTenSanPham(sanPhamData[0][0]);
 		sanPham.setMaSanPham(sanPhamData[0][1]);
 		sanPham.setGiaSanPham(sanPhamData[0][2]);
@@ -53,8 +57,8 @@ public class ThemSanPhamTest extends TestCase {
 		sanPham.setThuongHieuSanPham(sanPhamData[0][16]);
 		sanPham.setHinhAnh(sanPhamData[0][17]);
 		sanPham.setMoTaSanPham(sanPhamData[0][18]);
-
 		data[0][1] = sanPham;
+
 		return data;
 
 	}

@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import tests.models.SanPham;
 
@@ -19,12 +20,13 @@ public class ThemMoiPage extends Page {
 	public By txtHeDieuHanh = By.name("operating_system");
 	public By txtCameraTruoc = By.name("front_camera");
 	public By txtCameraSau = By.name("rear_camera");
-	public By txtDoHotSanPham = By.name("level");
-	public By txtTrangThai = By.name("status");
-	public By txtDanhMucSanPham = By.name("id_category");
-	public By txtThuongHieuSanPham = By.name("id_brand");
-	public By txtHinhAnh = By.name("file");
-	public By txtMoTaSanPham = By.name("description");
+	public By ddlDoHotSanPham = By.name("level");
+	public By ddlTrangThai = By.name("status");
+	public By ddlDanhMucSanPham = By.name("id_category");
+	public By ddlThuongHieuSanPham = By.name("id_brand");
+	public By txtHinhAnh = By.name("image");
+	public By iframe = By.xpath("//iframe");
+	public By txtMoTaSanPham = By.xpath("//html//body/p");
 	public By btnThemMoi = By.name("btn_submit");
 
 	public ThemMoiPage(WebDriver dr) {
@@ -45,12 +47,19 @@ public class ThemMoiPage extends Page {
 		base.inputText(txtHeDieuHanh, sanPham.getHeDieuHanh());
 		base.inputText(txtCameraTruoc, sanPham.getCameraTruoc());
 		base.inputText(txtCameraSau, sanPham.getCameraSau());
-		base.inputText(txtDoHotSanPham, sanPham.getDoHotSanPham());
-		base.inputText(txtTrangThai, sanPham.getTrangThai());
-		base.inputText(txtDanhMucSanPham, sanPham.getDanhMucSanPham());
-		base.inputText(txtThuongHieuSanPham, sanPham.getThuongHieuSanPham());
-		base.inputText(txtHinhAnh, sanPham.getHinhAnh());
+		base.selectDropDownByVisibleText(ddlDoHotSanPham, sanPham.getDoHotSanPham());
+		base.selectDropDownByVisibleText(ddlTrangThai, sanPham.getTrangThai());
+		base.selectDropDownByVisibleText(ddlDanhMucSanPham,sanPham.getDanhMucSanPham());
+		base.selectDropDownByVisibleText(ddlThuongHieuSanPham, sanPham.getThuongHieuSanPham());
+		String picturePath = System.getProperty("user.dir")+"\\testcase\\"+"testdata\\"+"\\";
+		
+		base.inputText(txtHinhAnh,picturePath + sanPham.getHinhAnh());
+		WebDriver beforeDriver = driver;
+		WebElement iframeElement = driver.findElement(iframe); 
+		driver.switchTo().frame(iframeElement);
 		base.inputText(txtMoTaSanPham, sanPham.getMoTaSanPham());
+		driver.switchTo().defaultContent();
+		driver = beforeDriver;
 
 		base.clickOnElement(btnThemMoi);
 	}

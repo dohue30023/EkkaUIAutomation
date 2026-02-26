@@ -39,9 +39,21 @@ public class ThemSanPhamTest extends TestCase {
 		sanPham.setGiaSanPham(sanPhamData[0][2]);
 		sanPham.setGiaKhuyenMai(sanPhamData[0][3]);
 		sanPham.setSoLuong(sanPhamData[0][4]);
-		sanPham.setMaSanPham(sanPhamData[0][4]);
+		sanPham.setNguoiTao(sanPhamData[0][5]);
+		sanPham.setManHinh(sanPhamData[0][6]);
+		sanPham.setRam(sanPhamData[0][7]);
+		sanPham.setCpu(sanPhamData[0][8]);
+		sanPham.setBoNho(sanPhamData[0][9]);
+		sanPham.setHeDieuHanh(sanPhamData[0][10]);
+		sanPham.setCameraTruoc(sanPhamData[0][11]);
+		sanPham.setCameraSau(sanPhamData[0][12]);
+		sanPham.setDoHotSanPham(sanPhamData[0][13]);
+		sanPham.setTrangThai(sanPhamData[0][14]);
+		sanPham.setDanhMucSanPham(sanPhamData[0][15]);
+		sanPham.setThuongHieuSanPham(sanPhamData[0][16]);
+		sanPham.setHinhAnh(sanPhamData[0][17]);
+		sanPham.setMoTaSanPham(sanPhamData[0][18]);
 
-// To do : Bổ sung 19 trường còn lại
 		data[0][1] = sanPham;
 		return data;
 

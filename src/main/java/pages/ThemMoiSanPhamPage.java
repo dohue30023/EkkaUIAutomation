@@ -1,12 +1,13 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import tests.models.SanPham;
 
-public class ThemMoiPage extends Page {
+public class ThemMoiSanPhamPage extends Page {
 	public By txtTenSanPham = By.id("product-name");
 	public By txtMaSanPham = By.id("product-code");
 	public By txtGiaSanPham = By.name("price");
@@ -29,7 +30,7 @@ public class ThemMoiPage extends Page {
 	public By txtMoTaSanPham = By.xpath("//html//body/p");
 	public By btnThemMoi = By.name("btn_submit");
 
-	public ThemMoiPage(WebDriver dr) {
+	public ThemMoiSanPhamPage(WebDriver dr) {
 		super(dr);
 	}
 
@@ -49,19 +50,28 @@ public class ThemMoiPage extends Page {
 		base.inputText(txtCameraSau, sanPham.getCameraSau());
 		base.selectDropDownByVisibleText(ddlDoHotSanPham, sanPham.getDoHotSanPham());
 		base.selectDropDownByVisibleText(ddlTrangThai, sanPham.getTrangThai());
-		base.selectDropDownByVisibleText(ddlDanhMucSanPham,sanPham.getDanhMucSanPham());
+		base.selectDropDownByVisibleText(ddlDanhMucSanPham, sanPham.getDanhMucSanPham());
 		base.selectDropDownByVisibleText(ddlThuongHieuSanPham, sanPham.getThuongHieuSanPham());
-		String picturePath = System.getProperty("user.dir")+"\\testcase\\"+"testdata\\"+"\\";
-		
-		base.inputText(txtHinhAnh,picturePath + sanPham.getHinhAnh());
+		String picturePath = System.getProperty("user.dir") + "\\testcase\\" + "testdata\\" + "\\";
+
+		base.inputText(txtHinhAnh, picturePath + sanPham.getHinhAnh());
 		WebDriver beforeDriver = driver;
-		WebElement iframeElement = driver.findElement(iframe); 
+		WebElement iframeElement = driver.findElement(iframe);
 		driver.switchTo().frame(iframeElement);
 		base.inputText(txtMoTaSanPham, sanPham.getMoTaSanPham());
 		driver.switchTo().defaultContent();
 		driver = beforeDriver;
 
 		base.clickOnElement(btnThemMoi);
+	}
+
+	public String getAlertMessage() {
+		String result = "";
+		Alert alert = driver.switchTo().alert();
+		result = alert.getText();
+		return result;
+		
+
 	}
 
 }

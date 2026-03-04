@@ -10,11 +10,17 @@ public class TrangChuPage extends Page {
 		super(dr);
 	}
 
-	public ThemMoiPage  clickThemMoi() {
+	public ThemMoiSanPhamPage  clickThemMoiSanPham() {
 		base.clickOnElement(lblSanPham);
 		base.clickOnElement(lblThemMoi);
-		return new ThemMoiPage(driver);
+		return new ThemMoiSanPhamPage(driver);
 
 	}
+	
+	public ThemMoiBaiVietPage  clickThemMoiBaiViet() {
+		base.clickOnElement(lblSanPham);
+		base.clickOnElement(lblThemMoi);
+		return new ThemMoiBaiVietPage(driver);
 
+	}
 }

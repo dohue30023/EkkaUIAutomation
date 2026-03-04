@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-26T19:36:14 ICT" name="Default suite" finished-at="2026-02-26T19:36:28 ICT" duration-ms="14143">
+  <suite started-at="2026-03-04T16:11:49 ICT" name="Default suite" finished-at="2026-03-04T16:11:49 ICT" duration-ms="15">
     <groups>
     </groups>
-    <test started-at="2026-02-26T19:36:14 ICT" name="Default test" finished-at="2026-02-26T19:36:28 ICT" duration-ms="14143">
-      <class name="tests.ThemSanPhamTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@dd05255]" started-at="2026-02-26T19:36:14 ICT" name="setUp" finished-at="2026-02-26T19:36:18 ICT" duration-ms="3971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@dd05255]" started-at="2026-02-26T19:36:18 ICT" name="themMoiThanhCong" data-provider="ThemMoiData_TC01" finished-at="2026-02-26T19:36:28 ICT" duration-ms="10015" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tests.models.DangNhap@a4b2d8f]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tests.models.SanPham@dcfda20]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- themMoiThanhCong -->
-      </class> <!-- tests.ThemSanPhamTest -->
+    <test started-at="2026-03-04T16:11:49 ICT" name="Default test" finished-at="2026-03-04T16:11:49 ICT" duration-ms="15">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

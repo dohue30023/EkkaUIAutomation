@@ -16,11 +16,7 @@ public class TestBase {
 	public void openWeb(String browser, String url) {
 
 		if (browser.equalsIgnoreCase("chrome")) {
-
-			// open browser
-			String driverPath = System.getProperty("user.dir");
-			System.setProperty("webdriver.chrome.driver", driverPath + "\\driver\\chromedriver.exe");
-
+			// Selenium Manager (built into Selenium 4.6+) auto-downloads the matching ChromeDriver
 			webDriver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 		}

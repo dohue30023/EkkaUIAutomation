@@ -15,7 +15,7 @@ public TestBase testBase = new TestBase();
 
 		String browser ="chrome";
 
-		String url="http://localhost/store/admin/?modules=users&controller=index&action=login";
+		String url="http://localhost/test/store/admin/?modules=users&controller=index&action=login";
 
 		testBase.openWeb(browser, url);
 

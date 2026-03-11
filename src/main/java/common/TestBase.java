@@ -29,7 +29,8 @@ public class TestBase {
 
 	public boolean isDisplayed(By locator, int timeToSecond) {
 		boolean result = false;
-		WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(timeToSecond));
+		int waitSeconds = timeToSecond > 0 ? timeToSecond : 5;
+		WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(waitSeconds));
 		WebElement webElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		if (webElement.isDisplayed()) {
 			result = true;

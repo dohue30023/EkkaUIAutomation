@@ -6,19 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class DanhSachBaiVietPage extends Page {
+public class DanhSachThuongHieuPage extends Page {
 	public By btnThemMoi = By.id("add-new");
 	public By txtTimKiem = By.id("s");
 	public By btnTimKiem = By.name("sm_s");
 	public By ketQuaTimKiem = By.xpath("//tbody/tr/td[3]/span");
 
-	public DanhSachBaiVietPage(WebDriver dr) {
+	
+	public DanhSachThuongHieuPage(WebDriver dr) {
 		super(dr);
 	}
-	
-	public ThemMoiBaiVietPage clickThemMoi() {
+
+	public ThemMoiThuongHieuPage clickThemMoi() {
 		base.clickOnElement(btnThemMoi);
-		return new ThemMoiBaiVietPage(driver);
+		return new ThemMoiThuongHieuPage(driver);
 	}
 
 	public void timKiem(String textSearch) {

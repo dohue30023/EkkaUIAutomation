@@ -7,12 +7,15 @@ import org.openqa.selenium.WebElement;
 import tests.models.ThuongHieu;
 
 public class ThemMoiThuongHieuPage extends Page{
-	public By txtTenDanhMuc = By.id("title");
-	public By txtMaCode = By.id("title");
-	public By txtNguoiTao = By.name("image");
-	public By txtMoTa = By.xpath("//html//body/p");
-	public By txtHinhAnh = By.name("image");
-	public By btnThemMoi = By.name("btn_submit");
+	public By txtTenDanhMuc = By.name("name");
+	public By txtMaCode = By.name("code");
+	public By txtNguoiTao = By.name("user");
+	public By txtHinhAnh = By.id("upload-thumb");
+	public By btnThemMoi = By.id("btn-submit");
+
+	// CKEditor iframe + editable body for 'Mô Tả'
+	public By iframeMoTa = By.cssSelector("iframe.cke_wysiwyg_frame");
+	public By txtMoTa = By.cssSelector("body.cke_editable");
 
 	public ThemMoiThuongHieuPage(WebDriver dr) {
 		super(dr);
@@ -22,8 +25,24 @@ public class ThemMoiThuongHieuPage extends Page{
 		base.inputText(txtTenDanhMuc, thuongHieu.getTenDanhMuc());
 		base.inputText(txtMaCode, thuongHieu.getMaCode());
 		base.inputText(txtNguoiTao, thuongHieu.getNguoiTao());
-		base.inputText(txtMoTa, thuongHieu.getMoTa());
-		base.inputText(txtHinhAnh, thuongHieu.getHinhAnh());
+
+		String picturePath = System.getProperty("user.dir") + "\\testcase\\testdata\\";
+		base.inputText(txtHinhAnh, picturePath + thuongHieu.getHinhAnh());
+
+		try {
+			    driver.switchTo().frame(driver.findElement(iframeMoTa));
+			    WebElement body = driver.findElement(txtMoTa);
+			    ((org.openqa.selenium.JavascriptExecutor) driver)
+				    .executeScript("arguments[0].innerHTML = arguments[1];", body, thuongHieu.getMoTa());
+			    driver.switchTo().defaultContent();
+			    // Ensure the hidden textarea value is set so form submission includes description
+			    ((org.openqa.selenium.JavascriptExecutor) driver)
+				    .executeScript("document.getElementById('desc').value = arguments[0];", thuongHieu.getMoTa());
+		} catch (org.openqa.selenium.NoSuchElementException ex) {
+			// If CKEditor iframe not present, try to input directly into element
+			    base.inputText(By.id("desc"), thuongHieu.getMoTa());
+		}
+
 		base.clickOnElement(btnThemMoi);
 	}
 

@@ -1,5 +1,7 @@
 package tests;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,7 +22,10 @@ public class ThemBaiVietTest extends TestCase {
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
-	}
+		String expectedMessage = "Thêm mới bài viết thành công";
+		String actualMessage = themMoiBaiVietPage.getAlertMessage();
+		assertEquals(expectedMessage, actualMessage); //TestNG framework	
+		}
 
 //	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Tiêu đề", dataProvider = "ThemMoiBaiVietData_TC02")
 	public void themMoiKhongThanhCongKhongNhapTieuDe(DangNhap dangNhap, BaiViet baiViet) {
@@ -29,6 +34,9 @@ public class ThemBaiVietTest extends TestCase {
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
+		String expectedMessage = "title không được rỗng";
+		String actualMessage = themMoiBaiVietPage.getAlertMessage();
+		assertEquals(expectedMessage, actualMessage); //TestNG framework	
 	}
 
 //	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Người viết", dataProvider = "ThemMoiBaiVietData_TC03")
@@ -38,6 +46,9 @@ public class ThemBaiVietTest extends TestCase {
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
+		String expectedMessage = "user không được để trống";
+		String actualMessage = themMoiBaiVietPage.getAlertMessage();
+		assertEquals(expectedMessage, actualMessage); //TestNG framework	
 	}
 
 //	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiBaiVietData_TC04")
@@ -47,6 +58,9 @@ public class ThemBaiVietTest extends TestCase {
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
+		String expectedMessage = "user không được để trống";
+		String actualMessage = themMoiBaiVietPage.getAlertMessage();
+		assertEquals(expectedMessage, actualMessage); //TestNG framework
 	}
 
 	@DataProvider(name = "ThemMoiBaiVietData_TC01")

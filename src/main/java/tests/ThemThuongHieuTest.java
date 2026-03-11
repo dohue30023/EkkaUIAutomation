@@ -7,8 +7,12 @@ import org.testng.annotations.Test;
 
 import common.Utils;
 import pages.DangNhapPage;
+import pages.DanhSachBaiVietPage;
+import pages.DanhSachThuongHieuPage;
+import pages.ThemMoiBaiVietPage;
 import pages.ThemMoiThuongHieuPage;
 import pages.TrangChuPage;
+import tests.models.BaiViet;
 import tests.models.DangNhap;
 import tests.models.ThuongHieu;
 
@@ -17,22 +21,24 @@ public class ThemThuongHieuTest extends TestCase {
 	public void themMoiThanhCong(DangNhap dangNhap, ThuongHieu thuongHieu) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
-		ThemMoiThuongHieuPage themMoiPage = trangChuPage.clickThemMoiThuongHieu();
-		themMoiPage.inputData(thuongHieu);
+		DanhSachThuongHieuPage danhSachThuongHieuPage = trangChuPage.clickDanhSachThuongHieu();
+		ThemMoiThuongHieuPage themMoiThuongHieuPage = danhSachThuongHieuPage.clickThemMoi();
+		themMoiThuongHieuPage.inputData(thuongHieu);
 		String expectedMessage = "Thêm mới thành công";
-		String actualMessage = themMoiPage.getAlertMessage();
-		assertEquals(expectedMessage, actualMessage); //TestNG framework
+		String actualMessage = themMoiThuongHieuPage.getAlertMessage();
+		assertEquals(expectedMessage, actualMessage); // TestNG framework
 	}
 
 //	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một thương hiệu khi không nhập vào các trường bắt buộc", dataProvider = "ThemMoiData_TC02")
 	public void themMoiKhongThanhCongVoiTenSanPhamBlank(DangNhap dangNhap, ThuongHieu thuongHieu) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
-		ThemMoiThuongHieuPage themMoiPage = trangChuPage.clickThemMoiThuongHieu();
-		themMoiPage.inputData(thuongHieu);
-		String expectedMessage = "Thêm mới danh mục sản phẩm thất bại";
-		String actualMessage = themMoiPage.getAlertMessage();
-		assertEquals(expectedMessage, actualMessage); //TestNG framework
+		DanhSachThuongHieuPage danhSachThuongHieuPage = trangChuPage.clickDanhSachThuongHieu();
+		ThemMoiThuongHieuPage themMoiThuongHieuPage = danhSachThuongHieuPage.clickThemMoi();
+		themMoiThuongHieuPage.inputData(thuongHieu);
+		String expectedMessage = "Thêm mới thất bại một thương hiệu";
+		String actualMessage = themMoiThuongHieuPage.getAlertMessage();
+		assertEquals(expectedMessage, actualMessage); // TestNG framework
 	}
 
 	@DataProvider(name = "ThemMoiThuongHieuData")
@@ -59,5 +65,29 @@ public class ThemThuongHieuTest extends TestCase {
 
 		return data;
 
+	}
+
+	@DataProvider(name = "ThemMoiData_TC02")
+	public Object[][] readDataTestCase02() {
+		Utils utils = new Utils();
+		Object[][] data = new Object[1][2];
+
+		// Đọc dữ liệu đăng nhập
+		String[][] dangNhapData = utils.readDataFormCSV("DangNhap_Data.csv");
+		DangNhap dangNhap = new DangNhap();
+		dangNhap.setUserName(dangNhapData[0][0]);
+		dangNhap.setPassWord(dangNhapData[0][1]);
+		data[0][0] = dangNhap;
+
+		// Tạo dữ liệu thương hiệu với Tên danh mục blank để test negative case
+		ThuongHieu thuongHieu = new ThuongHieu();
+		thuongHieu.setTenDanhMuc("");
+		thuongHieu.setMaCode("AutoCode");
+		thuongHieu.setNguoiTao(dangNhapData[0][0]);
+		thuongHieu.setMoTa("Mô tả test");
+		thuongHieu.setHinhAnh("samsung.jpg");
+		data[0][1] = thuongHieu;
+
+		return data;
 	}
 }

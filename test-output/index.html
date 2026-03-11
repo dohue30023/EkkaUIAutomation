@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\fpt\AppData\Local\Temp\testng-eclipse-391902546\testng-customsuite.xml</span>
+                    <span>C:\Users\fpt\AppData\Local\Temp\testng-eclipse-777560523\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.ThemBaiVietTest" class="method navigator-link" hash-for-method="themMoiThanhCong(tests.models.DangNhap@4e28bdd1, tests.models.BaiViet@53f48368)">themMoiThanhCong(tests.models.DangNhap@4e28bdd1, tests.models.BaiViet@53f48368)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.TimKiemSanPhamTest" class="method navigator-link" hash-for-method="themMoiThanhCong">themMoiThanhCong</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,33 +121,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.ThemBaiVietTest</span>
+              <span class="class-name">tests.TimKiemSanPhamTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="themMoiThanhCong(tests.models.DangNhap@4e28bdd1, tests.models.BaiViet@53f48368)">
-                  </a> <!-- themMoiThanhCong(tests.models.DangNhap@4e28bdd1, tests.models.BaiViet@53f48368) -->
+                  <a name="themMoiThanhCong">
+                  </a> <!-- themMoiThanhCong -->
                   <span class="method-name">themMoiThanhCong</span>
-                  <span class="parameters">(tests.models.DangNhap@4e28bdd1,tests.models.BaiViet@53f48368)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: body.cke_editable (tried for 0 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54881}, goog:processID: 12892, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54881/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbcad0cb6b9be635f3a08662d012a173
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at common.TestBase.isDisplayed(TestBase.java:33)
-	at common.TestBase.inputText(TestBase.java:41)
-	at pages.ThemMoiBaiVietPage.inputData(ThemMoiBaiVietPage.java:28)
-	at tests.ThemBaiVietTest.themMoiThanhCong(ThemBaiVietTest.java:22)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void tests.TimKiemSanPhamTest.themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: themMoiThanhCong([tests.models.DangNhap arg0, tests.models.SanPham arg1])
+Arguments: [(java.lang.String) admin,(java.lang.String) admin]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -177,7 +166,7 @@ Session ID: fbcad0cb6b9be635f3a08662d012a173
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\fpt\AppData\Local\Temp\testng-eclipse-391902546\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\fpt\AppData\Local\Temp\testng-eclipse-777560523\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,7 +175,7 @@ Session ID: fbcad0cb6b9be635f3a08662d012a173
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.ThemBaiVietTest&quot;/&gt;
+      &lt;class name=&quot;tests.TimKiemSanPhamTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -229,13 +218,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'themMoiThanhCong')
-data.setCell(0, 2, 'tests.ThemBaiVietTest')
-data.setCell(0, 3, 2268);
+data.setCell(0, 2, 'tests.TimKiemSanPhamTest')
+data.setCell(0, 3, 28);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 28 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,18 +249,6 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.ThemBaiVietTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">themMoiThanhCong(tests.models.DangNhap@4e28bdd1, tests.models.BaiViet@53f48368)</span>
-                <span class="method-start">3173 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

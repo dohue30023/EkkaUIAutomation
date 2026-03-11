@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +31,9 @@ public class ThemMoiSanPhamPage extends Page {
 	public By iframe = By.xpath("//iframe");
 	public By txtMoTaSanPham = By.xpath("//html//body/p");
 	public By btnThemMoi = By.name("btn_submit");
+	public By txtTimKiem = By.id("s");
+	public By btnTimKiem = By.name("sm_s");
+	public By ketQuaTimKiem = By.xpath("//tbody/tr/td[3]/span");
 
 	public ThemMoiSanPhamPage(WebDriver dr) {
 		super(dr);
@@ -74,4 +79,26 @@ public class ThemMoiSanPhamPage extends Page {
 
 	}
 
+	public void timKiem(String textSearch) {
+		base.inputText(txtTimKiem, textSearch);
+		base.clickOnElement(btnTimKiem);
+	}
+	public boolean getSearchResult(String textSearch) {
+		boolean result = false;
+		timKiem(textSearch);
+		List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
+		int count = 0;
+		for(WebElement e : resultElements) {
+			String actualTitle = e.getText();
+			if(actualTitle.contains(textSearch)) {
+				count ++;
+			}
+		}
+		
+		if(count == resultElements.size()) {
+			result = true;
+		}
+		
+		return result;
+	}
 }

@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +26,20 @@ public class ThemMoiBaiVietPage extends Page{
 		String picturePath = System.getProperty("user.dir") + "\\testcase\\" + "testdata\\" + "\\";
 		base.inputText(txtHinhAnh, picturePath + baiViet.getHinhAnh());
 		base.inputText(txtMoTaNgan, baiViet.getMoTaNgan());
-		base.inputText(txtNoiDung, baiViet.getNoiDung());
+		// CKEditor lives inside an iframe. Switch to it, set the body HTML, then switch back
+		driver.switchTo().frame(driver.findElement(iframeNoiDung));
+		WebElement body = driver.findElement(txtNoiDung);
+		((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].innerHTML = arguments[1];", body, baiViet.getNoiDung());
+		driver.switchTo().defaultContent();
 		base.clickOnElement(btnThemMoi);
+	}
+	
+	public String getAlertMessage() {
+		String result = "";
+		Alert alert = driver.switchTo().alert();
+		result = alert.getText();
+		return result;
+		
+
 	}
 }

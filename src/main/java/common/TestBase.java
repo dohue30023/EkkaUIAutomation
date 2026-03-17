@@ -2,6 +2,7 @@ package common;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -56,6 +57,15 @@ public class TestBase {
 			Select selectElement = new Select(dropDownElement);
 			selectElement.selectByVisibleText(text);
 		}
+	}
+	
+	public String getAlertMessage() {
+		String result = "";
+		Alert alert = webDriver.switchTo().alert();
+		result = alert.getText();
+		return result;
+		
+
 	}
 
 }

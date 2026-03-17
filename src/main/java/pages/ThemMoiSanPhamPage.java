@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import tests.models.SanPham;
 
 public class ThemMoiSanPhamPage extends Page {
+	public By lblDanhSachSanPham = By.xpath("//*[text()='Sản Phẩm']/following::a[text()='Danh sách'][1]");
+	public By lblSanPham = By.xpath("//*[text()='Sản Phẩm']");
 	public By txtTenSanPham = By.id("product-name");
 	public By txtMaSanPham = By.id("product-code");
 	public By txtGiaSanPham = By.name("price");
@@ -34,6 +36,7 @@ public class ThemMoiSanPhamPage extends Page {
 	public By txtTimKiem = By.id("s");
 	public By btnTimKiem = By.name("sm_s");
 	public By ketQuaTimKiem = By.xpath("//tbody/tr/td[3]/span");
+	
 
 	public ThemMoiSanPhamPage(WebDriver dr) {
 		super(dr);
@@ -58,7 +61,6 @@ public class ThemMoiSanPhamPage extends Page {
 		base.selectDropDownByVisibleText(ddlDanhMucSanPham, sanPham.getDanhMucSanPham());
 		base.selectDropDownByVisibleText(ddlThuongHieuSanPham, sanPham.getThuongHieuSanPham());
 		String picturePath = System.getProperty("user.dir") + "\\testcase\\" + "testdata\\" + "\\";
-
 		base.inputText(txtHinhAnh, picturePath + sanPham.getHinhAnh());
 		WebDriver beforeDriver = driver;
 		WebElement iframeElement = driver.findElement(iframe);
@@ -100,5 +102,16 @@ public class ThemMoiSanPhamPage extends Page {
 		}
 		
 		return result;
+	}
+	
+	public void clickOkButton() {
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
+	
+	public DanhSachSanPhamPage clickDanhSachSanPham() {
+		base.clickOnElement(lblSanPham);
+		base.clickOnElement(lblDanhSachSanPham);
+		return new DanhSachSanPhamPage(driver);
 	}
 }

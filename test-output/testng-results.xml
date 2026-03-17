@@ -2,29 +2,69 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-11T09:55:26 ICT" name="Default suite" finished-at="2026-03-11T09:55:26 ICT" duration-ms="75">
+  <suite started-at="2026-03-17T22:36:23 ICT" name="Default suite" finished-at="2026-03-17T22:36:36 ICT" duration-ms="13377">
     <groups>
     </groups>
-    <test started-at="2026-03-11T09:55:26 ICT" name="Default test" finished-at="2026-03-11T09:55:26 ICT" duration-ms="75">
-      <class name="tests.TimKiemSanPhamTest">
-        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.TimKiemSanPhamTest@1a677343]" started-at="2026-03-11T09:55:26 ICT" name="themMoiThanhCong" data-provider="DangNhapData" finished-at="2026-03-11T09:55:26 ICT" duration-ms="28" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
+    <test started-at="2026-03-17T22:36:23 ICT" name="Default test" finished-at="2026-03-17T22:36:36 ICT" duration-ms="13377">
+      <class name="tests.XoaSanPhamTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.XoaSanPhamTest@1a677343]" started-at="2026-03-17T22:36:23 ICT" name="setUp" finished-at="2026-03-17T22:36:30 ICT" duration-ms="7203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="xoaSanPhamThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.XoaSanPhamTest@1a677343]" started-at="2026-03-17T22:36:30 ICT" name="xoaSanPhamThanhCong" data-provider="ThemSanPhamDeXoa" finished-at="2026-03-17T22:36:36 ICT" duration-ms="6007" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tests.models.DangNhap@2bef51f2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tests.models.SanPham@650eab8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
-              <![CDATA[
-[public void tests.TimKiemSanPhamTest.themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: themMoiThanhCong([tests.models.DangNhap arg0, tests.models.SanPham arg1])
-Arguments: [(java.lang.String) admin,(java.lang.String) admin]]]>
+              <![CDATA[no such alert
+  (Session info: chrome=145.0.7632.160)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf2b64b9e4ef260ba225388350fa27f2, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61618}, goog:processID: 19444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61618/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf2b64b9e4ef260ba225388350fa27f2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void tests.TimKiemSanPhamTest.themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: themMoiThanhCong([tests.models.DangNhap arg0, tests.models.SanPham arg1])
-Arguments: [(java.lang.String) admin,(java.lang.String) admin]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=145.0.7632.160)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf2b64b9e4ef260ba225388350fa27f2, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61618}, goog:processID: 19444, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61618/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf2b64b9e4ef260ba225388350fa27f2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1180)
+at pages.ThemMoiSanPhamPage.clickOkButton(ThemMoiSanPhamPage.java:108)
+at tests.XoaSanPhamTest.xoaSanPhamThanhCong(XoaSanPhamTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -47,11 +87,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- themMoiThanhCong -->
-      </class> <!-- tests.TimKiemSanPhamTest -->
+        </test-method> <!-- xoaSanPhamThanhCong -->
+      </class> <!-- tests.XoaSanPhamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

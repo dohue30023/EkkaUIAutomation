@@ -11,6 +11,9 @@ public class TrangChuPage extends Page {
 	public By lblThuongHieu = By.xpath("//*[text()='Thương Hiệu']");
 	public By lblDanhSachThuongHieu = By.xpath("//*[text()='Thương Hiệu']/following::a[text()='Danh sách'][1]");
 	public By lblQuangCao = By.xpath("//*[text()='Slider']");
+	public By lblThemMoiQuangCao = By.xpath("//span[text()='Slider']/../following-sibling::ul[@class='sub-menu']//a[text()='Thêm mới']");
+	public By lblDanhSachSanPham = By.xpath("//*[text()='Sản Phẩm']/following::a[text()='Danh sách'][1]");
+
 
 
 	public TrangChuPage(WebDriver dr) {
@@ -38,8 +41,13 @@ public class TrangChuPage extends Page {
 	}
 	public ThemMoiQuangCaoPage  clickThemMoiQuangCao() {
 		base.clickOnElement(lblQuangCao);
-		base.clickOnElement(lblThemMoi);
+		base.clickOnElement(lblThemMoiQuangCao);
 		return new ThemMoiQuangCaoPage(driver);
 
+	}
+	public DanhSachSanPhamPage clickDanhSachSanPham() {
+		base.clickOnElement(lblSanPham);
+		base.clickOnElement(lblDanhSachSanPham);
+		return new DanhSachSanPhamPage(driver);
 	}
 }

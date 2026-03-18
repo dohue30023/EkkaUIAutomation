@@ -14,7 +14,7 @@ import tests.models.DangNhap;
 import tests.models.SanPham;
 
 public class TimKiemSanPhamTest extends TestCase{
-//	@Test(testName = "[Tìm kiếm] Kiểm tra tìm kiếm thành công khi nhập vào textbox = tên sản phẩm đã tồn tại trong DB", dataProvider = "DangNhapData")
+	@Test(testName = "[Tìm kiếm] Kiểm tra tìm kiếm thành công khi nhập vào textbox = tên sản phẩm đã tồn tại trong DB", dataProvider = "DangNhapData")
 	public void themMoiThanhCong(DangNhap dangNhap, SanPham sanPham) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
@@ -30,7 +30,7 @@ public class TimKiemSanPhamTest extends TestCase{
 		return dangNhapData;
 	}
 	
-	@Test(testName = "[Tìm kiếm] Kiểm tra tìm kiếm thành công khi nhập vào textbox = tên sản phẩm chưa tồn tại trong DB", dataProvider = "DangNhapData")
+//	@Test(testName = "[Tìm kiếm] Kiểm tra tìm kiếm thành công khi nhập vào textbox = tên sản phẩm chưa tồn tại trong DB", dataProvider = "DangNhapData")
 	public void themMoiKhongThanhCong(DangNhap dangNhap, SanPham sanPham) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());

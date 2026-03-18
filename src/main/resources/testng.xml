@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EkkaAutomation">
+	<test name="AllCase">
+
+		
+		<classes>
+			<class name="tests.ThemBaiVietTest" />
+			<class name="tests.ThemQuangCaoTest" />
+			<class name="tests.ThemSanPhamTest" />
+			<class name="tests.ThemThuongHieuTest" />
+			<class name="tests.TimKiemBaiVietTest" />
+			<class name="tests.TimKiemSanPhamTest" />
+			<class name="tests.TimKiemThuongHieuTest" />
+			<class name="tests.XoaSanPhamTest" />
+
+		</classes>
+	</test> <!-- AllCase -->
+</suite> <!-- EkkaAutomation -->

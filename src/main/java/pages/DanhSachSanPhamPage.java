@@ -17,6 +17,7 @@ public class DanhSachSanPhamPage extends Page{
 	public String clickXoaSanPham(String tenSanPham) {
 		timKiem(tenSanPham);
 		base.clickOnElement(iconXoaSanPham);
+		clickOkButton();
 		String result = base.getAlertMessage();
 		return result;
 	}

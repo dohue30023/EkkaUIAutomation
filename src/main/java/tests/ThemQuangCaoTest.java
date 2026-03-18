@@ -23,6 +23,7 @@ public class ThemQuangCaoTest extends TestCase{
 		themMoiQuangCaoPage.inputData(quangCao);
 		String expectedMessage = "Thêm mới thành công";
 		String actualMessage = themMoiQuangCaoPage.getAlertMessage();
+		System.out.println("EXPECTED: [" + expectedMessage + "] | ACTUAL: [" + actualMessage + "]");
 		assertEquals(expectedMessage, actualMessage); //TestNG framework
 	}
 	

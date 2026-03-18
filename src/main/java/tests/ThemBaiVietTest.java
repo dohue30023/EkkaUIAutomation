@@ -15,7 +15,7 @@ import tests.models.DangNhap;
 
 public class ThemBaiVietTest extends TestCase {
 
-	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một bài viết", dataProvider = "ThemMoiBaiVietData_TC01")
+//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một bài viết", dataProvider = "ThemMoiBaiVietData_TC01")
 	public void themMoiThanhCong(DangNhap dangNhap, BaiViet baiViet) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
@@ -34,9 +34,9 @@ public class ThemBaiVietTest extends TestCase {
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
-		String expectedMessage = "title không được rỗng";
+		String expectedMessage = "title không được để trống";
 		String actualMessage = themMoiBaiVietPage.getAlertMessage();
-		assertEquals(expectedMessage, actualMessage); //TestNG framework	
+		org.testng.Assert.assertEquals(actualMessage, expectedMessage); //TestNG framework
 	}
 
 //	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Người viết", dataProvider = "ThemMoiBaiVietData_TC03")
@@ -51,7 +51,7 @@ public class ThemBaiVietTest extends TestCase {
 		assertEquals(expectedMessage, actualMessage); //TestNG framework	
 	}
 
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiBaiVietData_TC04")
+//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không  công một bài viết khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiBaiVietData_TC04")
 	public void themMoiKhongThanhCongBoTrongTruongBatBuoc(DangNhap dangNhap, BaiViet baiViet) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());

@@ -24,6 +24,11 @@ public class ThemMoiQuangCaoPage extends Page{
 }
 
 public String getAlertMessage() {
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
 	String result = "";
 	Alert alert = driver.switchTo().alert();
 	result = alert.getText();

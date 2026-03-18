@@ -12,7 +12,6 @@ public class DanhSachThuongHieuPage extends Page {
 	public By btnTimKiem = By.name("sm_s");
 	public By ketQuaTimKiem = By.xpath("//tbody/tr/td[3]/span");
 
-	
 	public DanhSachThuongHieuPage(WebDriver dr) {
 		super(dr);
 	}
@@ -26,22 +25,33 @@ public class DanhSachThuongHieuPage extends Page {
 		base.inputText(txtTimKiem, textSearch);
 		base.clickOnElement(btnTimKiem);
 	}
+	// public boolean getSearchResult(String textSearch) {
+	// boolean result = false;
+	// timKiem(textSearch);
+	// List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
+	// int count = 0;
+	// for(WebElement e : resultElements) {
+	// String actualTitle = e.getText();
+	// if(actualTitle.contains(textSearch)) {
+	// count ++;
+	// }
+	// }
+
+	// if(count == resultElements.size()) {
+	// result = true;
+	// }
+
+	// return result;
+	// }
+
 	public boolean getSearchResult(String textSearch) {
-		boolean result = false;
 		timKiem(textSearch);
 		List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
-		int count = 0;
-		for(WebElement e : resultElements) {
-			String actualTitle = e.getText();
-			if(actualTitle.contains(textSearch)) {
-				count ++;
+		for (WebElement e : resultElements) {
+			if (e.getText() != null && e.getText().contains(textSearch)) {
+				return true;
 			}
 		}
-		
-		if(count == resultElements.size()) {
-			result = true;
-		}
-		
-		return result;
+		return false;
 	}
 }

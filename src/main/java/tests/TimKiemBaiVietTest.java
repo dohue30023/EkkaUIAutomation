@@ -13,7 +13,7 @@ import tests.models.BaiViet;
 import tests.models.DangNhap;
 
 public class TimKiemBaiVietTest extends TestCase {
-//	@Test(testName = "[Tìm kiếm] Kiểm tra tìm kiếm thành công khi nhập vào textbox = Tiêu đề đã tồn tại trong DB", dataProvider = "DangNhapData")
+	@Test(testName = "[Tìm kiếm] Kiểm tra tìm kiếm thành công khi nhập vào textbox = Tiêu đề đã tồn tại trong DB", dataProvider = "DangNhapData")
 	public void timKiemThanhCong(String username, String password) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(username, password);
@@ -35,8 +35,6 @@ public class TimKiemBaiVietTest extends TestCase {
 		TrangChuPage trangChuPage = dangNhapPage.login(username, password);
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		boolean timKiemResult = danhSachBaiVietPage.getSearchResult("!@#$");
-		System.out.println(">>>>: " + timKiemResult);
-
 		assertTrue(timKiemResult);
 	}
 

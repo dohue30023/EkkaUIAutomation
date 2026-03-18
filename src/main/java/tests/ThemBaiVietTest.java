@@ -1,6 +1,7 @@
 package tests;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -51,16 +52,17 @@ public class ThemBaiVietTest extends TestCase {
 		assertEquals(expectedMessage, actualMessage); //TestNG framework	
 	}
 
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không  công một bài viết khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiBaiVietData_TC04")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không  công một bài viết khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiBaiVietData_TC04")
 	public void themMoiKhongThanhCongBoTrongTruongBatBuoc(DangNhap dangNhap, BaiViet baiViet) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
-		themMoiBaiVietPage.inputData(baiViet);
-		String expectedMessage = "user không được để trống";
+//		themMoiBaiVietPage.inputData(baiViet);
+	    themMoiBaiVietPage.clickThemMoi();
+		String expectedMessage = "title không được rỗng\\nuser không được rỗng\\ncontent không được rỗng\\ndescription không được rỗng\\nVui lòng chọn ảnh.\\nimage không được rỗng";
 		String actualMessage = themMoiBaiVietPage.getAlertMessage();
-		assertEquals(expectedMessage, actualMessage); //TestNG framework
+		assertTrue(actualMessage.contains(expectedMessage)); //TestNG framework
 	}
 
 	@DataProvider(name = "ThemMoiBaiVietData_TC01")

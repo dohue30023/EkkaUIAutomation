@@ -18,7 +18,7 @@ import tests.models.DangNhap;
 import tests.models.ThuongHieu;
 
 public class ThemThuongHieuTest extends TestCase {
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một thương hiệu", dataProvider = "ThemMoiThuongHieuData")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một thương hiệu", dataProvider = "ThemMoiThuongHieuData")
 	public void themMoiThanhCong(DangNhap dangNhap, ThuongHieu thuongHieu) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
@@ -30,14 +30,15 @@ public class ThemThuongHieuTest extends TestCase {
 		assertEquals(expectedMessage, actualMessage); // TestNG framework
 	}
 
-//	 @Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một thương hiệu khi không nhập vào các trường bắt buộc", dataProvider = "ThemMoiData_TC02")
+	 @Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một thương hiệu khi không nhập vào các trường bắt buộc", dataProvider = "ThemMoiData_TC02")
 	public void themMoiKhongThanhCongVoiTenSanPhamBlank(DangNhap dangNhap, ThuongHieu thuongHieu) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
 		DanhSachThuongHieuPage danhSachThuongHieuPage = trangChuPage.clickDanhSachThuongHieu();
 		ThemMoiThuongHieuPage themMoiThuongHieuPage = danhSachThuongHieuPage.clickThemMoi();
-		themMoiThuongHieuPage.inputData(thuongHieu);
-		String expectedMessage = "Thêm mới thất bại một thương hiệu";
+//		themMoiThuongHieuPage.inputData(thuongHieu);
+	    themMoiThuongHieuPage.clickThemMoi();
+		String expectedMessage = "Thêm mới danh mục sản phẩm thất bại haha";
 		String actualMessage = themMoiThuongHieuPage.getAlertMessage();
 		assertEquals(expectedMessage, actualMessage); // TestNG framework
 	}

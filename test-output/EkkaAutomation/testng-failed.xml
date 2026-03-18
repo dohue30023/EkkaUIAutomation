@@ -7,59 +7,42 @@
         <methods>
           <include name="timKiemKhongThanhCong"/>
           <include name="setUp"/>
-          <include name="timKiemThanhCong"/>
         </methods>
       </class> <!-- tests.TimKiemThuongHieuTest -->
       <class name="tests.ThemBaiVietTest">
         <methods>
-          <include name="themMoiKhongThanhCongKhongNhapTieuDe"/>
+          <include name="themMoiKhongThanhCongKhongNhapTieuDe" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="themMoiThanhCong"/>
-          <include name="themMoiKhongThanhCongBoTrongTruongBatBuoc"/>
-          <include name="themMoiKhongThanhCongKhongNhapNguoiViet"/>
+          <include name="themMoiKhongThanhCongBoTrongTruongBatBuoc" invocation-numbers="0"/>
+          <include name="themMoiKhongThanhCongKhongNhapNguoiViet" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.ThemBaiVietTest -->
       <class name="tests.ThemThuongHieuTest">
         <methods>
           <include name="setUp"/>
-          <include name="themMoiKhongThanhCongVoiTenSanPhamBlank"/>
-          <include name="themMoiThanhCong"/>
+          <include name="themMoiKhongThanhCongVoiTenSanPhamBlank" invocation-numbers="0"/>
+          <include name="themMoiThanhCong" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.ThemThuongHieuTest -->
       <class name="tests.ThemSanPhamTest">
         <methods>
-          <include name="themMoiKhongThanhCongVoiSanPhamDaTonTai"/>
+          <include name="themMoiKhongThanhCongVoiSanPhamDaTonTai" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="themMoiThanhCong"/>
-          <include name="themMoiKhongThanhCongVoiTenSanPhamBlank"/>
         </methods>
       </class> <!-- tests.ThemSanPhamTest -->
-      <class name="tests.ThemQuangCaoTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="themMoiThanhCong"/>
-        </methods>
-      </class> <!-- tests.ThemQuangCaoTest -->
       <class name="tests.TimKiemSanPhamTest">
         <methods>
-          <include name="themMoiKhongThanhCong"/>
+          <include name="timKiemKhongThanhCong"/>
           <include name="setUp"/>
-          <include name="themMoiThanhCong"/>
+          <include name="timKiemThanhCong" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.TimKiemSanPhamTest -->
       <class name="tests.XoaSanPhamTest">
         <methods>
-          <include name="xoaSanPhamThanhCong"/>
+          <include name="xoaSanPhamThanhCong" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.XoaSanPhamTest -->
-      <class name="tests.TimKiemBaiVietTest">
-        <methods>
-          <include name="timKiemKhongThanhCong"/>
-          <include name="setUp"/>
-          <include name="timKiemThanhCong"/>
-        </methods>
-      </class> <!-- tests.TimKiemBaiVietTest -->
     </classes>
   </test> <!-- AllCase(failed) -->
 </suite> <!-- Failed suite [EkkaAutomation] -->

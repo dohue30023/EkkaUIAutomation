@@ -47,9 +47,18 @@ public class ThemMoiThuongHieuPage extends Page{
 	}
 
 	public String getAlertMessage() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		String result = "";
 		org.openqa.selenium.Alert alert = driver.switchTo().alert();
 		result = alert.getText();
 		return result;
+	}
+	
+	public void clickThemMoi() {
+		base.clickOnElement(btnThemMoi);
 	}
 }

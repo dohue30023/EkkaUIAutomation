@@ -13,7 +13,7 @@ import tests.models.DangNhap;
 import tests.models.SanPham;
 
 public class ThemSanPhamTest extends TestCase {
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một sản phẩm", dataProvider = "ThemMoiData_TC01")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một sản phẩm", dataProvider = "ThemMoiData_TC01")
 	public void themMoiThanhCong(DangNhap dangNhap, SanPham sanPham) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
@@ -24,7 +24,7 @@ public class ThemSanPhamTest extends TestCase {
 		assertEquals(expectedMessage, actualMessage); //TestNG framework
 	}
 	
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một sản phẩm khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiData_TC02")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một sản phẩm khi bỏ trống trường bắt buộc", dataProvider = "ThemMoiData_TC02")
 	public void themMoiKhongThanhCongVoiTenSanPhamBlank(DangNhap dangNhap, SanPham sanPham) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
@@ -37,7 +37,7 @@ public class ThemSanPhamTest extends TestCase {
 		assertEquals(expectedMessage, actualMessage); //TestNG framework
 	}
 
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một sản phẩm với tên sản phẩm đã tồn tại trong hệ thống.", dataProvider = "ThemMoiData_TC03")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một sản phẩm với tên sản phẩm đã tồn tại trong hệ thống.", dataProvider = "ThemMoiData_TC03")
 	public void themMoiKhongThanhCongVoiSanPhamDaTonTai(DangNhap dangNhap, SanPham sanPham) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());

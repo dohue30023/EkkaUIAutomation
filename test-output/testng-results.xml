@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-18T11:21:22 ICT" name="Default suite" finished-at="2026-03-18T11:21:26 ICT" duration-ms="3594">
+  <suite started-at="2026-03-18T23:40:14 ICT" name="Default suite" finished-at="2026-03-18T23:40:28 ICT" duration-ms="13790">
     <groups>
     </groups>
-    <test started-at="2026-03-18T11:21:22 ICT" name="Default test" finished-at="2026-03-18T11:21:26 ICT" duration-ms="3594">
-      <class name="tests.TimKiemBaiVietTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemBaiVietTest@1a677343]" started-at="2026-03-18T11:21:22 ICT" name="setUp" finished-at="2026-03-18T11:21:24 ICT" duration-ms="2109" status="PASS">
+    <test started-at="2026-03-18T23:40:14 ICT" name="Default test" finished-at="2026-03-18T23:40:28 ICT" duration-ms="13790">
+      <class name="tests.XoaSanPhamTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.XoaSanPhamTest@1a677343]" started-at="2026-03-18T23:40:14 ICT" name="setUp" finished-at="2026-03-18T23:40:18 ICT" duration-ms="3793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemKhongThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemBaiVietTest@1a677343]" started-at="2026-03-18T11:21:24 ICT" name="timKiemKhongThanhCong" data-provider="DangNhapData" finished-at="2026-03-18T11:21:26 ICT" duration-ms="1408" status="PASS">
+        <test-method signature="xoaSanPhamThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.XoaSanPhamTest@1a677343]" started-at="2026-03-18T23:40:18 ICT" name="xoaSanPhamThanhCong" data-provider="ThemSanPhamDeXoa" finished-at="2026-03-18T23:40:27 ICT" duration-ms="9871" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[tests.models.DangNhap@5b7ea70d]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[admin]]>
+                <![CDATA[tests.models.SanPham@2bef51f2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- timKiemKhongThanhCong -->
-      </class> <!-- tests.TimKiemBaiVietTest -->
+        </test-method> <!-- xoaSanPhamThanhCong -->
+      </class> <!-- tests.XoaSanPhamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

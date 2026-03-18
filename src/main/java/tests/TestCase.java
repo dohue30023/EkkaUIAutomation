@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import common.TestBase;
@@ -22,8 +23,9 @@ public TestBase testBase = new TestBase();
 	}
 
 	
-
+//@AfterMethod
 	public void tearDown() {
+		testBase.webDriver.quit();
 
 		
 

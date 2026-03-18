@@ -45,6 +45,9 @@ public class ThemMoiBaiVietPage extends Page{
 		result = alert.getText();
 		return result;
 		
-
+	}
+	
+	public void clickThemMoi() {
+		base.clickOnElement(btnThemMoi);
 	}
 }

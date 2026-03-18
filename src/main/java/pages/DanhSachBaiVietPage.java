@@ -25,6 +25,17 @@ public class DanhSachBaiVietPage extends Page {
 		base.inputText(txtTimKiem, textSearch);
 		base.clickOnElement(btnTimKiem);
 	}
+//	public boolean getSearchResult(String textSearch) {
+//		timKiem(textSearch);
+//		List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
+//		for (WebElement e : resultElements) {
+//			if (e.getText() != null && e.getText().contains(textSearch)) {
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
+	
 	public boolean getSearchResult(String textSearch) {
 		boolean result = false;
 		timKiem(textSearch);

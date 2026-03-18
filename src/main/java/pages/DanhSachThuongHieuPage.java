@@ -25,33 +25,31 @@ public class DanhSachThuongHieuPage extends Page {
 		base.inputText(txtTimKiem, textSearch);
 		base.clickOnElement(btnTimKiem);
 	}
-	// public boolean getSearchResult(String textSearch) {
-	// boolean result = false;
-	// timKiem(textSearch);
-	// List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
-	// int count = 0;
-	// for(WebElement e : resultElements) {
-	// String actualTitle = e.getText();
-	// if(actualTitle.contains(textSearch)) {
-	// count ++;
-	// }
-	// }
+	 public boolean getSearchResult(String textSearch) {
+	 boolean result = false;
+	 timKiem(textSearch);
+	 List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
+	 int count = 0;
+	 for(WebElement e : resultElements) {
+	 String actualTitle = e.getText();
+	 if(actualTitle.contains(textSearch)) {
+	 count ++;
+	 }
+	 }
+	 if(count == resultElements.size()) {
+	 result = true;
+	 }
+	 return result;
+	 }
 
-	// if(count == resultElements.size()) {
-	// result = true;
-	// }
-
-	// return result;
-	// }
-
-	public boolean getSearchResult(String textSearch) {
-		timKiem(textSearch);
-		List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
-		for (WebElement e : resultElements) {
-			if (e.getText() != null && e.getText().contains(textSearch)) {
-				return true;
-			}
-		}
-		return false;
-	}
+//	public boolean getSearchResult(String textSearch) {
+//		timKiem(textSearch);
+//		List<WebElement> resultElements = driver.findElements(ketQuaTimKiem);
+//		for (WebElement e : resultElements) {
+//			if (e.getText() != null && e.getText().contains(textSearch)) {
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
 }

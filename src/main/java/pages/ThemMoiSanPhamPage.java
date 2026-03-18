@@ -110,6 +110,11 @@ public class ThemMoiSanPhamPage extends Page {
 	}
 	
 	public void clickOkButton() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
 	}

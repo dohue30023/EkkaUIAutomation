@@ -3,27 +3,6 @@
 <suite name="Failed suite [EkkaAutomation]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AllCase(failed)">
     <classes>
-      <class name="tests.TimKiemThuongHieuTest">
-        <methods>
-          <include name="timKiemKhongThanhCong"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- tests.TimKiemThuongHieuTest -->
-      <class name="tests.ThemBaiVietTest">
-        <methods>
-          <include name="themMoiKhongThanhCongKhongNhapTieuDe" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="themMoiKhongThanhCongBoTrongTruongBatBuoc" invocation-numbers="0"/>
-          <include name="themMoiKhongThanhCongKhongNhapNguoiViet" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- tests.ThemBaiVietTest -->
-      <class name="tests.ThemThuongHieuTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="themMoiKhongThanhCongVoiTenSanPhamBlank" invocation-numbers="0"/>
-          <include name="themMoiThanhCong" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- tests.ThemThuongHieuTest -->
       <class name="tests.ThemSanPhamTest">
         <methods>
           <include name="themMoiKhongThanhCongVoiSanPhamDaTonTai" invocation-numbers="0"/>
@@ -32,17 +11,10 @@
       </class> <!-- tests.ThemSanPhamTest -->
       <class name="tests.TimKiemSanPhamTest">
         <methods>
-          <include name="timKiemKhongThanhCong"/>
+          <include name="timKiemKhongThanhCong" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="timKiemThanhCong" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.TimKiemSanPhamTest -->
-      <class name="tests.XoaSanPhamTest">
-        <methods>
-          <include name="xoaSanPhamThanhCong" invocation-numbers="0"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- tests.XoaSanPhamTest -->
     </classes>
   </test> <!-- AllCase(failed) -->
 </suite> <!-- Failed suite [EkkaAutomation] -->

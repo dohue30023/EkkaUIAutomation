@@ -16,7 +16,7 @@ import tests.models.DangNhap;
 
 public class ThemBaiVietTest extends TestCase {
 
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một bài viết", dataProvider = "ThemMoiBaiVietData_TC01")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới thành công một bài viết", dataProvider = "ThemMoiBaiVietData_TC01")
 	public void themMoiThanhCong(DangNhap dangNhap, BaiViet baiViet) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
@@ -28,26 +28,26 @@ public class ThemBaiVietTest extends TestCase {
 		assertEquals(expectedMessage, actualMessage); //TestNG framework	
 		}
 
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Tiêu đề", dataProvider = "ThemMoiBaiVietData_TC02")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Tiêu đề", dataProvider = "ThemMoiBaiVietData_TC02")
 	public void themMoiKhongThanhCongKhongNhapTieuDe(DangNhap dangNhap, BaiViet baiViet) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
-		String expectedMessage = "title không được để trống";
+		String expectedMessage = "title không được rỗng";
 		String actualMessage = themMoiBaiVietPage.getAlertMessage();
 		org.testng.Assert.assertEquals(actualMessage, expectedMessage); //TestNG framework
 	}
 
-//	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Người viết", dataProvider = "ThemMoiBaiVietData_TC03")
+	@Test(testName = "[Thêm mới] Kiểm tra thêm mới không thành công một bài viết khi không nhập vào trường Người viết", dataProvider = "ThemMoiBaiVietData_TC03")
 	public void themMoiKhongThanhCongKhongNhapNguoiViet(DangNhap dangNhap, BaiViet baiViet) {
 		DangNhapPage dangNhapPage = new DangNhapPage(testBase.webDriver);
 		TrangChuPage trangChuPage = dangNhapPage.login(dangNhap.getUserName(), dangNhap.getPassWord());
 		DanhSachBaiVietPage danhSachBaiVietPage = trangChuPage.clickDanhSachBaiViet();
 		ThemMoiBaiVietPage themMoiBaiVietPage = danhSachBaiVietPage.clickThemMoi();
 		themMoiBaiVietPage.inputData(baiViet);
-		String expectedMessage = "user không được để trống";
+		String expectedMessage = "user không được rỗng";
 		String actualMessage = themMoiBaiVietPage.getAlertMessage();
 		assertEquals(expectedMessage, actualMessage); //TestNG framework	
 	}

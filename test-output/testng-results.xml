@@ -1,86 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="15" failed="2" skipped="0">
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-19T22:07:11 ICT" name="EkkaAutomation" finished-at="2026-03-19T22:10:17 ICT" duration-ms="186685">
+  <suite started-at="2026-03-20T14:54:11 ICT" name="EkkaAutomation" finished-at="2026-03-20T14:55:54 ICT" duration-ms="103368">
     <groups>
     </groups>
-    <test started-at="2026-03-19T22:07:11 ICT" name="AllCase" finished-at="2026-03-19T22:10:17 ICT" duration-ms="186685">
+    <test started-at="2026-03-20T14:54:11 ICT" name="AllCase" finished-at="2026-03-20T14:55:54 ICT" duration-ms="103368">
       <class name="tests.ThemBaiVietTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:11 ICT" name="setUp" finished-at="2026-03-19T22:07:13 ICT" duration-ms="2664" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:11 ICT" name="setUp" finished-at="2026-03-20T14:54:13 ICT" duration-ms="2067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiKhongThanhCongBoTrongTruongBatBuoc(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:13 ICT" name="themMoiKhongThanhCongBoTrongTruongBatBuoc" data-provider="ThemMoiBaiVietData_TC04" finished-at="2026-03-19T22:07:17 ICT" duration-ms="3817" status="PASS">
+        <test-method signature="themMoiKhongThanhCongBoTrongTruongBatBuoc(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:13 ICT" name="themMoiKhongThanhCongBoTrongTruongBatBuoc" data-provider="ThemMoiBaiVietData_TC04" finished-at="2026-03-20T14:54:17 ICT" duration-ms="3902" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@2dbe250d]]>
+                <![CDATA[tests.models.DangNhap@1bb1fde8]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.BaiViet@553f1d75]]>
+                <![CDATA[tests.models.BaiViet@15eebbff]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themMoiKhongThanhCongBoTrongTruongBatBuoc -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:17 ICT" name="setUp" finished-at="2026-03-19T22:07:19 ICT" duration-ms="1284" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:17 ICT" name="setUp" finished-at="2026-03-20T14:54:18 ICT" duration-ms="1237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiKhongThanhCongKhongNhapNguoiViet(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:19 ICT" name="themMoiKhongThanhCongKhongNhapNguoiViet" data-provider="ThemMoiBaiVietData_TC03" finished-at="2026-03-19T22:07:22 ICT" duration-ms="3963" status="PASS">
+        <test-method signature="themMoiKhongThanhCongKhongNhapNguoiViet(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:18 ICT" name="themMoiKhongThanhCongKhongNhapNguoiViet" data-provider="ThemMoiBaiVietData_TC03" finished-at="2026-03-20T14:54:22 ICT" duration-ms="4226" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@15bcf458]]>
+                <![CDATA[tests.models.DangNhap@e3cee7b]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.BaiViet@5af9926a]]>
+                <![CDATA[tests.models.BaiViet@71e9a896]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themMoiKhongThanhCongKhongNhapNguoiViet -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:22 ICT" name="setUp" finished-at="2026-03-19T22:07:24 ICT" duration-ms="1180" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:22 ICT" name="setUp" finished-at="2026-03-20T14:54:23 ICT" duration-ms="1264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiKhongThanhCongKhongNhapTieuDe(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:24 ICT" name="themMoiKhongThanhCongKhongNhapTieuDe" data-provider="ThemMoiBaiVietData_TC02" finished-at="2026-03-19T22:07:27 ICT" duration-ms="3817" status="PASS">
+        <test-method signature="themMoiKhongThanhCongKhongNhapTieuDe(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:23 ICT" name="themMoiKhongThanhCongKhongNhapTieuDe" data-provider="ThemMoiBaiVietData_TC02" finished-at="2026-03-20T14:54:28 ICT" duration-ms="4346" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@6d467c87]]>
+                <![CDATA[tests.models.DangNhap@286b39c2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.BaiViet@29182679]]>
+                <![CDATA[tests.models.BaiViet@5432050b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themMoiKhongThanhCongKhongNhapTieuDe -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:27 ICT" name="setUp" finished-at="2026-03-19T22:07:29 ICT" duration-ms="1061" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:28 ICT" name="setUp" finished-at="2026-03-20T14:54:29 ICT" duration-ms="1586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-19T22:07:29 ICT" name="themMoiThanhCong" data-provider="ThemMoiBaiVietData_TC01" finished-at="2026-03-19T22:07:32 ICT" duration-ms="3726" status="PASS">
+        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.BaiViet)[pri:0, instance:tests.ThemBaiVietTest@bcec361]" started-at="2026-03-20T14:54:29 ICT" name="themMoiThanhCong" data-provider="ThemMoiBaiVietData_TC01" finished-at="2026-03-20T14:54:34 ICT" duration-ms="4450" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@376e7531]]>
+                <![CDATA[tests.models.DangNhap@3e7545e8]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.BaiViet@23202c31]]>
+                <![CDATA[tests.models.BaiViet@75e710b]]>
               </value>
             </param>
           </params>
@@ -89,20 +89,20 @@
         </test-method> <!-- themMoiThanhCong -->
       </class> <!-- tests.ThemBaiVietTest -->
       <class name="tests.ThemSanPhamTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-19T22:07:38 ICT" name="setUp" finished-at="2026-03-19T22:07:40 ICT" duration-ms="2283" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-20T14:54:39 ICT" name="setUp" finished-at="2026-03-20T14:54:41 ICT" duration-ms="1516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiKhongThanhCongVoiSanPhamDaTonTai(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-19T22:07:40 ICT" name="themMoiKhongThanhCongVoiSanPhamDaTonTai" data-provider="ThemMoiData_TC03" finished-at="2026-03-19T22:07:48 ICT" duration-ms="7690" status="FAIL">
+        <test-method signature="themMoiKhongThanhCongVoiSanPhamDaTonTai(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-20T14:54:41 ICT" name="themMoiKhongThanhCongVoiSanPhamDaTonTai" data-provider="ThemMoiData_TC03" finished-at="2026-03-20T14:54:46 ICT" duration-ms="5013" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@177515d1]]>
+                <![CDATA[tests.models.DangNhap@77865933]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.SanPham@52ff99cd]]>
+                <![CDATA[tests.models.SanPham@480ad82c]]>
               </value>
             </param>
           </params>
@@ -151,40 +151,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themMoiKhongThanhCongVoiSanPhamDaTonTai -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-19T22:07:48 ICT" name="setUp" finished-at="2026-03-19T22:07:50 ICT" duration-ms="1963" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-20T14:54:46 ICT" name="setUp" finished-at="2026-03-20T14:54:58 ICT" duration-ms="12691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiKhongThanhCongVoiTenSanPhamBlank(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-19T22:07:50 ICT" name="themMoiKhongThanhCongVoiTenSanPhamBlank" data-provider="ThemMoiData_TC02" finished-at="2026-03-19T22:08:00 ICT" duration-ms="10005" status="PASS">
+        <test-method signature="themMoiKhongThanhCongVoiTenSanPhamBlank(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-20T14:54:58 ICT" name="themMoiKhongThanhCongVoiTenSanPhamBlank" data-provider="ThemMoiData_TC02" finished-at="2026-03-20T14:55:04 ICT" duration-ms="5252" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@3a00b15d]]>
+                <![CDATA[tests.models.DangNhap@709f0202]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.SanPham@36ef1d65]]>
+                <![CDATA[tests.models.SanPham@654e6a90]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themMoiKhongThanhCongVoiTenSanPhamBlank -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-19T22:08:00 ICT" name="setUp" finished-at="2026-03-19T22:08:04 ICT" duration-ms="4016" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-20T14:55:04 ICT" name="setUp" finished-at="2026-03-20T14:55:05 ICT" duration-ms="1599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-19T22:08:04 ICT" name="themMoiThanhCong" data-provider="ThemMoiData_TC01" finished-at="2026-03-19T22:08:17 ICT" duration-ms="12825" status="PASS">
+        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.ThemSanPhamTest@bccb269]" started-at="2026-03-20T14:55:05 ICT" name="themMoiThanhCong" data-provider="ThemMoiData_TC01" finished-at="2026-03-20T14:55:10 ICT" duration-ms="5047" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@7e191fda]]>
+                <![CDATA[tests.models.DangNhap@36d582cb]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.SanPham@6562cc23]]>
+                <![CDATA[tests.models.SanPham@6c2a95d5]]>
               </value>
             </param>
           </params>
@@ -193,40 +193,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- themMoiThanhCong -->
       </class> <!-- tests.ThemSanPhamTest -->
       <class name="tests.ThemThuongHieuTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-19T22:08:17 ICT" name="setUp" finished-at="2026-03-19T22:08:23 ICT" duration-ms="6055" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-20T14:55:10 ICT" name="setUp" finished-at="2026-03-20T14:55:12 ICT" duration-ms="1391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiKhongThanhCongVoiTenSanPhamBlank(tests.models.DangNhap,tests.models.ThuongHieu)[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-19T22:08:23 ICT" name="themMoiKhongThanhCongVoiTenSanPhamBlank" data-provider="ThemMoiData_TC02" finished-at="2026-03-19T22:08:28 ICT" duration-ms="4782" status="PASS">
+        <test-method signature="themMoiKhongThanhCongVoiTenSanPhamBlank(tests.models.DangNhap,tests.models.ThuongHieu)[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-20T14:55:12 ICT" name="themMoiKhongThanhCongVoiTenSanPhamBlank" data-provider="ThemMoiData_TC02" finished-at="2026-03-20T14:55:16 ICT" duration-ms="3893" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@6dcf7b6a]]>
+                <![CDATA[tests.models.DangNhap@2086d469]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.ThuongHieu@53dba9cd]]>
+                <![CDATA[tests.models.ThuongHieu@b1d19ff]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- themMoiKhongThanhCongVoiTenSanPhamBlank -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-19T22:08:28 ICT" name="setUp" finished-at="2026-03-19T22:08:30 ICT" duration-ms="2620" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-20T14:55:16 ICT" name="setUp" finished-at="2026-03-20T14:55:17 ICT" duration-ms="1756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.ThuongHieu)[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-19T22:08:30 ICT" name="themMoiThanhCong" data-provider="ThemMoiThuongHieuData" finished-at="2026-03-19T22:08:35 ICT" duration-ms="5059" status="PASS">
+        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.ThuongHieu)[pri:0, instance:tests.ThemThuongHieuTest@609cd4d8]" started-at="2026-03-20T14:55:17 ICT" name="themMoiThanhCong" data-provider="ThemMoiThuongHieuData" finished-at="2026-03-20T14:55:21 ICT" duration-ms="4099" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@3de8f85c]]>
+                <![CDATA[tests.models.DangNhap@5b7ee56c]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.ThuongHieu@21abda60]]>
+                <![CDATA[tests.models.ThuongHieu@311a0b3e]]>
               </value>
             </param>
           </params>
@@ -235,20 +235,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- themMoiThanhCong -->
       </class> <!-- tests.ThemThuongHieuTest -->
       <class name="tests.ThemQuangCaoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemQuangCaoTest@66d18979]" started-at="2026-03-19T22:07:32 ICT" name="setUp" finished-at="2026-03-19T22:07:34 ICT" duration-ms="1614" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ThemQuangCaoTest@66d18979]" started-at="2026-03-20T14:54:34 ICT" name="setUp" finished-at="2026-03-20T14:54:35 ICT" duration-ms="1472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.QuangCao)[pri:0, instance:tests.ThemQuangCaoTest@66d18979]" started-at="2026-03-19T22:07:34 ICT" name="themMoiThanhCong" data-provider="ThemMoiQuangCao_TC1.csv" finished-at="2026-03-19T22:07:38 ICT" duration-ms="4168" status="PASS">
+        <test-method signature="themMoiThanhCong(tests.models.DangNhap,tests.models.QuangCao)[pri:0, instance:tests.ThemQuangCaoTest@66d18979]" started-at="2026-03-20T14:54:35 ICT" name="themMoiThanhCong" data-provider="ThemMoiQuangCao_TC1.csv" finished-at="2026-03-20T14:54:39 ICT" duration-ms="3774" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@1702830d]]>
+                <![CDATA[tests.models.DangNhap@8deb645]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.QuangCao@6a937336]]>
+                <![CDATA[tests.models.QuangCao@7dd611c8]]>
               </value>
             </param>
           </params>
@@ -257,11 +257,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- themMoiThanhCong -->
       </class> <!-- tests.ThemQuangCaoTest -->
       <class name="tests.TimKiemBaiVietTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-19T22:08:35 ICT" name="setUp" finished-at="2026-03-19T22:08:38 ICT" duration-ms="2752" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-20T14:55:21 ICT" name="setUp" finished-at="2026-03-20T14:55:23 ICT" duration-ms="1343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemKhongThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-19T22:08:38 ICT" name="timKiemKhongThanhCong" data-provider="DangNhapData" finished-at="2026-03-19T22:08:41 ICT" duration-ms="3163" status="PASS">
+        <test-method signature="timKiemKhongThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-20T14:55:23 ICT" name="timKiemKhongThanhCong" data-provider="DangNhapData" finished-at="2026-03-20T14:55:24 ICT" duration-ms="1457" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,11 +277,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timKiemKhongThanhCong -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-19T22:08:41 ICT" name="setUp" finished-at="2026-03-19T22:08:44 ICT" duration-ms="2750" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-20T14:55:24 ICT" name="setUp" finished-at="2026-03-20T14:55:25 ICT" duration-ms="1248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-19T22:08:44 ICT" name="timKiemThanhCong" data-provider="DangNhapData" finished-at="2026-03-19T22:08:47 ICT" duration-ms="2903" status="PASS">
+        <test-method signature="timKiemThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemBaiVietTest@17f7cd29]" started-at="2026-03-20T14:55:25 ICT" name="timKiemThanhCong" data-provider="DangNhapData" finished-at="2026-03-20T14:55:27 ICT" duration-ms="1966" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -299,92 +299,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- timKiemThanhCong -->
       </class> <!-- tests.TimKiemBaiVietTest -->
       <class name="tests.TimKiemSanPhamTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-19T22:08:47 ICT" name="setUp" finished-at="2026-03-19T22:08:50 ICT" duration-ms="2588" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-20T14:55:27 ICT" name="setUp" finished-at="2026-03-20T14:55:29 ICT" duration-ms="1211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemKhongThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-19T22:08:50 ICT" name="timKiemKhongThanhCong" data-provider="TimKiemSanPham_TC2" finished-at="2026-03-19T22:08:57 ICT" duration-ms="7467" status="FAIL">
+        <test-method signature="timKiemKhongThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-20T14:55:29 ICT" name="timKiemKhongThanhCong" data-provider="TimKiemSanPham_TC2" finished-at="2026-03-20T14:55:31 ICT" duration-ms="2187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@45cb5307]]>
+                <![CDATA[tests.models.DangNhap@7a247711]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.SanPham@1c8e2850]]>
+                <![CDATA[tests.models.SanPham@4910afdf]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Không có sản phẩm nào}
-  (Session info: chrome=146.0.7680.153): Không có sản phẩm nào
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f66adf22aca8de662bc61b3064d9915, findElements {using=xpath, value=//tbody/tr/td[3]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.153, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51552}, goog:processID: 9808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51552/devtoo..., se:cdpVersion: 146.0.7680.153, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f66adf22aca8de662bc61b3064d9915]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Không có sản phẩm nào}
-  (Session info: chrome=146.0.7680.153): Không có sản phẩm nào
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f66adf22aca8de662bc61b3064d9915, findElements {using=xpath, value=//tbody/tr/td[3]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.153, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51552}, goog:processID: 9808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51552/devtoo..., se:cdpVersion: 146.0.7680.153, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f66adf22aca8de662bc61b3064d9915
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:374)
-at pages.DanhSachSanPhamPage.getSearchResult(DanhSachSanPhamPage.java:48)
-at tests.TimKiemSanPhamTest.timKiemKhongThanhCong(TimKiemSanPhamTest.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timKiemKhongThanhCong -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-19T22:08:57 ICT" name="setUp" finished-at="2026-03-19T22:09:05 ICT" duration-ms="7376" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-20T14:55:31 ICT" name="setUp" finished-at="2026-03-20T14:55:32 ICT" duration-ms="1643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-19T22:09:05 ICT" name="timKiemThanhCong" data-provider="DangNhapData" finished-at="2026-03-19T22:09:16 ICT" duration-ms="11311" status="PASS">
+        <test-method signature="timKiemThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemSanPhamTest@7d8704ef]" started-at="2026-03-20T14:55:32 ICT" name="timKiemThanhCong" data-provider="DangNhapData" finished-at="2026-03-20T14:55:35 ICT" duration-ms="2322" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -402,20 +341,20 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- timKiemThanhCong -->
       </class> <!-- tests.TimKiemSanPhamTest -->
       <class name="tests.XoaSanPhamTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.XoaSanPhamTest@158a8276]" started-at="2026-03-19T22:09:48 ICT" name="setUp" finished-at="2026-03-19T22:09:57 ICT" duration-ms="9877" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.XoaSanPhamTest@158a8276]" started-at="2026-03-20T14:55:44 ICT" name="setUp" finished-at="2026-03-20T14:55:45 ICT" duration-ms="1699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="xoaSanPhamThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.XoaSanPhamTest@158a8276]" started-at="2026-03-19T22:09:57 ICT" name="xoaSanPhamThanhCong" data-provider="ThemSanPhamDeXoa" finished-at="2026-03-19T22:10:17 ICT" duration-ms="19850" status="PASS">
+        <test-method signature="xoaSanPhamThanhCong(tests.models.DangNhap,tests.models.SanPham)[pri:0, instance:tests.XoaSanPhamTest@158a8276]" started-at="2026-03-20T14:55:45 ICT" name="xoaSanPhamThanhCong" data-provider="ThemSanPhamDeXoa" finished-at="2026-03-20T14:55:54 ICT" duration-ms="8591" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tests.models.DangNhap@7910e307]]>
+                <![CDATA[tests.models.DangNhap@3b3f62d7]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[tests.models.SanPham@460aa24e]]>
+                <![CDATA[tests.models.SanPham@5b3ee43e]]>
               </value>
             </param>
           </params>
@@ -424,11 +363,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- xoaSanPhamThanhCong -->
       </class> <!-- tests.XoaSanPhamTest -->
       <class name="tests.TimKiemThuongHieuTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-19T22:09:16 ICT" name="setUp" finished-at="2026-03-19T22:09:23 ICT" duration-ms="7502" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-20T14:55:35 ICT" name="setUp" finished-at="2026-03-20T14:55:37 ICT" duration-ms="1709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemKhongThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-19T22:09:23 ICT" name="timKiemKhongThanhCong" data-provider="DangNhapData" finished-at="2026-03-19T22:09:33 ICT" duration-ms="9633" status="PASS">
+        <test-method signature="timKiemKhongThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-20T14:55:37 ICT" name="timKiemKhongThanhCong" data-provider="DangNhapData" finished-at="2026-03-20T14:55:39 ICT" duration-ms="2484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -444,11 +383,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timKiemKhongThanhCong -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-19T22:09:33 ICT" name="setUp" finished-at="2026-03-19T22:09:40 ICT" duration-ms="7422" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-20T14:55:39 ICT" name="setUp" finished-at="2026-03-20T14:55:41 ICT" duration-ms="2119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="timKiemThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-19T22:09:40 ICT" name="timKiemThanhCong" data-provider="DangNhapData" finished-at="2026-03-19T22:09:48 ICT" duration-ms="7079" status="PASS">
+        <test-method signature="timKiemThanhCong(java.lang.String,java.lang.String)[pri:0, instance:tests.TimKiemThuongHieuTest@13b6aecc]" started-at="2026-03-20T14:55:41 ICT" name="timKiemThanhCong" data-provider="DangNhapData" finished-at="2026-03-20T14:55:44 ICT" duration-ms="2610" status="PASS">
           <params>
             <param index="0">
               <value>

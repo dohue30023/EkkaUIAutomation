@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.XoaSanPhamTest">
+      <class name="tests.BanHangTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="xoaSanPhamThanhCong" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="xuLyDonHangThanhCong" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.XoaSanPhamTest -->
+      </class> <!-- tests.BanHangTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,12 +9,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.ThemSanPhamTest -->
-      <class name="tests.TimKiemSanPhamTest">
-        <methods>
-          <include name="timKiemKhongThanhCong" invocation-numbers="0"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- tests.TimKiemSanPhamTest -->
     </classes>
   </test> <!-- AllCase(failed) -->
 </suite> <!-- Failed suite [EkkaAutomation] -->

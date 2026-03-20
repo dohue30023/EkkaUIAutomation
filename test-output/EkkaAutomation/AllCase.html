@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AllCase</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 19 22:07:11 ICT 2026</td>
+<td>Started on:</td><td>Fri Mar 20 14:54:11 ICT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>186 seconds (186685 ms)</td>
+<tr><td>Total time:</td><td>103 seconds (103368 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ThemSanPhamTest.themMoiKhongThanhCongVoiSanPhamDaTonTai()'><b>themMoiKhongThanhCongVoiSanPhamDaTonTai</b><br>Test class: tests.ThemSanPhamTest<br>Parameters: tests.models.DangNhap@177515d1, tests.models.SanPham@52ff99cd</td>
+<td title='tests.ThemSanPhamTest.themMoiKhongThanhCongVoiSanPhamDaTonTai()'><b>themMoiKhongThanhCongVoiSanPhamDaTonTai</b><br>Test class: tests.ThemSanPhamTest<br>Parameters: tests.models.DangNhap@77865933, tests.models.SanPham@480ad82c</td>
 <td><div><pre>java.lang.AssertionError: expected [Thêm mới danh mục sản phẩm thất bại] but found [Thêm mới thành công]
 	at tests.ThemSanPhamTest.themMoiKhongThanhCongVoiSanPhamDaTonTai(ThemSanPhamTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace212397882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace212397882'><pre>java.lang.AssertionError: expected [Thêm mới danh mục sản phẩm thất bại] but found [Thêm mới thành công]
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1182469998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1182469998'><pre>java.lang.AssertionError: expected [Thêm mới danh mục sản phẩm thất bại] but found [Thêm mới thành công]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -116,81 +116,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>7</td>
+<td>5</td>
 <td>tests.ThemSanPhamTest@bccb269</td></tr>
-<tr>
-<td title='tests.TimKiemSanPhamTest.timKiemKhongThanhCong()'><b>timKiemKhongThanhCong</b><br>Test class: tests.TimKiemSanPhamTest<br>Parameters: tests.models.DangNhap@45cb5307, tests.models.SanPham@1c8e2850</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Không có sản phẩm nào}
-  (Session info: chrome=146.0.7680.153): Không có sản phẩm nào
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f66adf22aca8de662bc61b3064d9915, findElements {using=xpath, value=//tbody/tr/td[3]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.153, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51552}, goog:processID: 9808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51552/devtoo..., se:cdpVersion: 146.0.7680.153, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f66adf22aca8de662bc61b3064d9915
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:374)
-	at pages.DanhSachSanPhamPage.getSearchResult(DanhSachSanPhamPage.java:48)
-	at tests.TimKiemSanPhamTest.timKiemKhongThanhCong(TimKiemSanPhamTest.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1428992213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1428992213'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Không có sản phẩm nào}
-  (Session info: chrome=146.0.7680.153): Không có sản phẩm nào
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f66adf22aca8de662bc61b3064d9915, findElements {using=xpath, value=//tbody/tr/td[3]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.153, chrome: {chromedriverVersion: 146.0.7680.153 (85fd829a1b2..., userDataDir: C:\Users\fpt\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51552}, goog:processID: 9808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51552/devtoo..., se:cdpVersion: 146.0.7680.153, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f66adf22aca8de662bc61b3064d9915
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:374)
-	at pages.DanhSachSanPhamPage.getSearchResult(DanhSachSanPhamPage.java:48)
-	at tests.TimKiemSanPhamTest.timKiemKhongThanhCong(TimKiemSanPhamTest.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>7</td>
-<td>tests.TimKiemSanPhamTest@7d8704ef</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -201,80 +128,85 @@ Session ID: 3f66adf22aca8de662bc61b3064d9915
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ThemSanPhamTest.themMoiKhongThanhCongVoiTenSanPhamBlank()'><b>themMoiKhongThanhCongVoiTenSanPhamBlank</b><br>Test class: tests.ThemSanPhamTest<br>Parameters: tests.models.DangNhap@3a00b15d, tests.models.SanPham@36ef1d65</td>
-<td></td>
-<td>10</td>
-<td>tests.ThemSanPhamTest@bccb269</td></tr>
-<tr>
-<td title='tests.ThemBaiVietTest.themMoiKhongThanhCongKhongNhapNguoiViet()'><b>themMoiKhongThanhCongKhongNhapNguoiViet</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@15bcf458, tests.models.BaiViet@5af9926a</td>
-<td></td>
-<td>3</td>
-<td>tests.ThemBaiVietTest@bcec361</td></tr>
-<tr>
-<td title='tests.ThemBaiVietTest.themMoiKhongThanhCongBoTrongTruongBatBuoc()'><b>themMoiKhongThanhCongBoTrongTruongBatBuoc</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@2dbe250d, tests.models.BaiViet@553f1d75</td>
-<td></td>
-<td>3</td>
-<td>tests.ThemBaiVietTest@bcec361</td></tr>
-<tr>
-<td title='tests.ThemBaiVietTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@376e7531, tests.models.BaiViet@23202c31</td>
-<td></td>
-<td>3</td>
-<td>tests.ThemBaiVietTest@bcec361</td></tr>
-<tr>
-<td title='tests.ThemQuangCaoTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemQuangCaoTest<br>Parameters: tests.models.DangNhap@1702830d, tests.models.QuangCao@6a937336</td>
+<td title='tests.ThemBaiVietTest.themMoiKhongThanhCongKhongNhapNguoiViet()'><b>themMoiKhongThanhCongKhongNhapNguoiViet</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@e3cee7b, tests.models.BaiViet@71e9a896</td>
 <td></td>
 <td>4</td>
-<td>tests.ThemQuangCaoTest@66d18979</td></tr>
+<td>tests.ThemBaiVietTest@bcec361</td></tr>
 <tr>
-<td title='tests.XoaSanPhamTest.xoaSanPhamThanhCong()'><b>xoaSanPhamThanhCong</b><br>Test class: tests.XoaSanPhamTest<br>Parameters: tests.models.DangNhap@7910e307, tests.models.SanPham@460aa24e</td>
+<td title='tests.ThemBaiVietTest.themMoiKhongThanhCongKhongNhapTieuDe()'><b>themMoiKhongThanhCongKhongNhapTieuDe</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@286b39c2, tests.models.BaiViet@5432050b</td>
 <td></td>
-<td>19</td>
-<td>tests.XoaSanPhamTest@158a8276</td></tr>
+<td>4</td>
+<td>tests.ThemBaiVietTest@bcec361</td></tr>
 <tr>
-<td title='tests.TimKiemSanPhamTest.timKiemThanhCong()'><b>timKiemThanhCong</b><br>Test class: tests.TimKiemSanPhamTest<br>Parameters: admin, admin</td>
-<td></td>
-<td>11</td>
-<td>tests.TimKiemSanPhamTest@7d8704ef</td></tr>
-<tr>
-<td title='tests.ThemBaiVietTest.themMoiKhongThanhCongKhongNhapTieuDe()'><b>themMoiKhongThanhCongKhongNhapTieuDe</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@6d467c87, tests.models.BaiViet@29182679</td>
+<td title='tests.ThemBaiVietTest.themMoiKhongThanhCongBoTrongTruongBatBuoc()'><b>themMoiKhongThanhCongBoTrongTruongBatBuoc</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@1bb1fde8, tests.models.BaiViet@15eebbff</td>
 <td></td>
 <td>3</td>
 <td>tests.ThemBaiVietTest@bcec361</td></tr>
 <tr>
-<td title='tests.ThemSanPhamTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemSanPhamTest<br>Parameters: tests.models.DangNhap@7e191fda, tests.models.SanPham@6562cc23</td>
+<td title='tests.TimKiemBaiVietTest.timKiemKhongThanhCong()'><b>timKiemKhongThanhCong</b><br>Test class: tests.TimKiemBaiVietTest<br>Parameters: admin, admin</td>
 <td></td>
-<td>12</td>
-<td>tests.ThemSanPhamTest@bccb269</td></tr>
+<td>1</td>
+<td>tests.TimKiemBaiVietTest@17f7cd29</td></tr>
 <tr>
-<td title='tests.ThemThuongHieuTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemThuongHieuTest<br>Parameters: tests.models.DangNhap@3de8f85c, tests.models.ThuongHieu@21abda60</td>
+<td title='tests.TimKiemSanPhamTest.timKiemKhongThanhCong()'><b>timKiemKhongThanhCong</b><br>Test class: tests.TimKiemSanPhamTest<br>Parameters: tests.models.DangNhap@7a247711, tests.models.SanPham@4910afdf</td>
 <td></td>
-<td>5</td>
-<td>tests.ThemThuongHieuTest@609cd4d8</td></tr>
+<td>2</td>
+<td>tests.TimKiemSanPhamTest@7d8704ef</td></tr>
+<tr>
+<td title='tests.ThemBaiVietTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemBaiVietTest<br>Parameters: tests.models.DangNhap@3e7545e8, tests.models.BaiViet@75e710b</td>
+<td></td>
+<td>4</td>
+<td>tests.ThemBaiVietTest@bcec361</td></tr>
 <tr>
 <td title='tests.TimKiemBaiVietTest.timKiemThanhCong()'><b>timKiemThanhCong</b><br>Test class: tests.TimKiemBaiVietTest<br>Parameters: admin, admin</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>tests.TimKiemBaiVietTest@17f7cd29</td></tr>
 <tr>
-<td title='tests.ThemThuongHieuTest.themMoiKhongThanhCongVoiTenSanPhamBlank()'><b>themMoiKhongThanhCongVoiTenSanPhamBlank</b><br>Test class: tests.ThemThuongHieuTest<br>Parameters: tests.models.DangNhap@6dcf7b6a, tests.models.ThuongHieu@53dba9cd</td>
+<td title='tests.ThemSanPhamTest.themMoiKhongThanhCongVoiTenSanPhamBlank()'><b>themMoiKhongThanhCongVoiTenSanPhamBlank</b><br>Test class: tests.ThemSanPhamTest<br>Parameters: tests.models.DangNhap@709f0202, tests.models.SanPham@654e6a90</td>
+<td></td>
+<td>5</td>
+<td>tests.ThemSanPhamTest@bccb269</td></tr>
+<tr>
+<td title='tests.ThemSanPhamTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemSanPhamTest<br>Parameters: tests.models.DangNhap@36d582cb, tests.models.SanPham@6c2a95d5</td>
+<td></td>
+<td>5</td>
+<td>tests.ThemSanPhamTest@bccb269</td></tr>
+<tr>
+<td title='tests.TimKiemSanPhamTest.timKiemThanhCong()'><b>timKiemThanhCong</b><br>Test class: tests.TimKiemSanPhamTest<br>Parameters: admin, admin</td>
+<td></td>
+<td>2</td>
+<td>tests.TimKiemSanPhamTest@7d8704ef</td></tr>
+<tr>
+<td title='tests.TimKiemThuongHieuTest.timKiemKhongThanhCong()'><b>timKiemKhongThanhCong</b><br>Test class: tests.TimKiemThuongHieuTest<br>Parameters: admin, admin</td>
+<td></td>
+<td>2</td>
+<td>tests.TimKiemThuongHieuTest@13b6aecc</td></tr>
+<tr>
+<td title='tests.XoaSanPhamTest.xoaSanPhamThanhCong()'><b>xoaSanPhamThanhCong</b><br>Test class: tests.XoaSanPhamTest<br>Parameters: tests.models.DangNhap@3b3f62d7, tests.models.SanPham@5b3ee43e</td>
+<td></td>
+<td>8</td>
+<td>tests.XoaSanPhamTest@158a8276</td></tr>
+<tr>
+<td title='tests.ThemThuongHieuTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemThuongHieuTest<br>Parameters: tests.models.DangNhap@5b7ee56c, tests.models.ThuongHieu@311a0b3e</td>
 <td></td>
 <td>4</td>
+<td>tests.ThemThuongHieuTest@609cd4d8</td></tr>
+<tr>
+<td title='tests.ThemThuongHieuTest.themMoiKhongThanhCongVoiTenSanPhamBlank()'><b>themMoiKhongThanhCongVoiTenSanPhamBlank</b><br>Test class: tests.ThemThuongHieuTest<br>Parameters: tests.models.DangNhap@2086d469, tests.models.ThuongHieu@b1d19ff</td>
+<td></td>
+<td>3</td>
 <td>tests.ThemThuongHieuTest@609cd4d8</td></tr>
 <tr>
 <td title='tests.TimKiemThuongHieuTest.timKiemThanhCong()'><b>timKiemThanhCong</b><br>Test class: tests.TimKiemThuongHieuTest<br>Parameters: admin, admin</td>
 <td></td>
-<td>7</td>
+<td>2</td>
 <td>tests.TimKiemThuongHieuTest@13b6aecc</td></tr>
 <tr>
-<td title='tests.TimKiemBaiVietTest.timKiemKhongThanhCong()'><b>timKiemKhongThanhCong</b><br>Test class: tests.TimKiemBaiVietTest<br>Parameters: admin, admin</td>
+<td title='tests.ThemQuangCaoTest.themMoiThanhCong()'><b>themMoiThanhCong</b><br>Test class: tests.ThemQuangCaoTest<br>Parameters: tests.models.DangNhap@8deb645, tests.models.QuangCao@7dd611c8</td>
 <td></td>
 <td>3</td>
-<td>tests.TimKiemBaiVietTest@17f7cd29</td></tr>
-<tr>
-<td title='tests.TimKiemThuongHieuTest.timKiemKhongThanhCong()'><b>timKiemKhongThanhCong</b><br>Test class: tests.TimKiemThuongHieuTest<br>Parameters: admin, admin</td>
-<td></td>
-<td>9</td>
-<td>tests.TimKiemThuongHieuTest@13b6aecc</td></tr>
+<td>tests.ThemQuangCaoTest@66d18979</td></tr>
 </table><p>
 </body>
 </html>
